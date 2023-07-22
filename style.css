@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #FFF;
+   
+  --text-color: #323238;
+  --btn-primary-color: white;
+  --bg-btn-color: #02799D;
+
+  
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+
+  align-self: center;
+  justify-self: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.timer {
+  margin-top: 5.8rem;
+  margin-right: 19.2rem;
+  margin-bottom: 6.5rem;
+}
+
+span {
+  font-size: 12.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  gap: 4.4rem;
+}
+
+.row-buttons {
+  gap: 3.2rem;
+  display: flex;
+}
+
+.row-buttons + .row-buttons {
+  margin-top: 3.2rem;
+}
+
+button.active svg path:nth-child(1) {
+  fill: var(--bg-btn-color);
+}
+
+button.active svg path:nth-child(2) {
+  fill: var(--btn-primary-color);
+}
